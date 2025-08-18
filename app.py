@@ -29,41 +29,6 @@ st.markdown("""
 This project builds and compares two XGBoost models to predict machine failure, with one trained on the original dataset and the other on an augmented dataset. It showcases how generating synthetic data for the minority (failure) class using the **Synthetic Data Vault (SDV)** library can effectively balance the dataset. The final comparison demonstrates that this data augmentation technique improves the model's predictive performance and robustness.
 """)
 
-# Datasets download section
-st.subheader("Download Datasets")
-original_dataset = pd.read_csv("original_dataset.csv")
-# Create a layout with two columns
-col1, col2, col3, col4 = st.columns(4)
-
-with col1:
-    st.download_button(
-        label="Download Original Data (.csv)",
-        data=original_dataset.to_csv(index=False),
-        file_name="original_dataset.csv",
-        mime="text/csv"
-    )
-
-with col2:
-    st.download_button(
-        label="Download Original Cleaned Data (.csv)",
-        data=df_cleaned_df.to_csv(index=False),
-        file_name="df_cleaned.csv",
-        mime="text/csv"
-    )
-with col3:
-    st.download_button(
-        label="Download Synthetic Data (.csv)",
-        data=synthetic_data_df.to_csv(index=False),
-        file_name="synthetic_data.csv",
-        mime="text/csv"
-    )
-with col4:
-    st.download_button(
-        label="Download Augmented Data (.csv)",
-        data=augmented_df.to_csv(index=False),
-        file_name="augmented.csv",
-        mime="text/csv"
-    )
 
 # --- Caching Functions to Improve Performance ---
 
