@@ -5,8 +5,8 @@ matplotlib
 seaborn
 scikit-learn
 sdv
-GaussianCopula
 xgboost
+
 
 
 
