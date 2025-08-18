@@ -31,6 +31,7 @@ This project builds and compares two XGBoost models to predict machine failure, 
 
 # Datasets download section
 st.subheader("Download Datasets")
+original_dataset = pd.read_csv("original_dataset.csv")
 # Create a layout with two columns
 col1, col2, col3, col4 = st.columns(4)
 
