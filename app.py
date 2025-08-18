@@ -32,7 +32,7 @@ This project builds and compares two XGBoost models to predict machine failure, 
 # Datasets download section
 st.subheader("Download Datasets")
 # Create a layout with two columns
-col1, col2, col3, col4 = st.columns(2)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.download_button(
