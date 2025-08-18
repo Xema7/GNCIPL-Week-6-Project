@@ -4,6 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 sdv
-GaussianCopulaSynthesizer
+GaussianCopula
 xgboost
+
 
