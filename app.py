@@ -22,7 +22,7 @@ from sklearn.metrics import classification_report, roc_auc_score, roc_curve, con
 from xgboost import XGBClassifier
 
 # Set page configuration for a wider layout
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 st.title("Synthetic Data Generation for Machine Failure")
 st.markdown("""
