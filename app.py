@@ -37,7 +37,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.download_button(
         label="Download Original Data (.csv)",
-        data=raw_data_df.to_csv(index=False),
+        data=original_dataset_df.to_csv(index=False),
         file_name="original_dataset.csv",
         mime="text/csv"
     )
@@ -45,7 +45,7 @@ with col1:
 with col2:
     st.download_button(
         label="Download Original Cleaned Data (.csv)",
-        data=synthetic_data_df.to_csv(index=False),
+        data=df_cleaned_df.to_csv(index=False),
         file_name="df_cleaned.csv",
         mime="text/csv"
     )
@@ -59,7 +59,7 @@ with col3:
 with col4:
     st.download_button(
         label="Download Augmented Data (.csv)",
-        data=synthetic_data_df.to_csv(index=False),
+        data=augmented_df.to_csv(index=False),
         file_name="augmented.csv",
         mime="text/csv"
     )
