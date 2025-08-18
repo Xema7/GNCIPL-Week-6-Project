@@ -37,7 +37,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.download_button(
         label="Download Original Data (.csv)",
-        data=original_dataset_df.to_csv(index=False),
+        data=original_dataset.to_csv(index=False),
         file_name="original_dataset.csv",
         mime="text/csv"
     )
