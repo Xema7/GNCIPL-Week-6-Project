@@ -1,3 +1,4 @@
+streamlit
 pandas
 numpy
 matplotlib
@@ -6,5 +7,6 @@ scikit-learn
 sdv
 GaussianCopula
 xgboost
+
 
 
