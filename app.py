@@ -29,10 +29,10 @@ left_margin, main_content = st.columns([1, 4])
 # Set page configuration for a wider layout
 #st.set_page_config(layout="wide")
 with main_content:
-st.title("Synthetic Data Generation for Machine Failure")
-st.markdown("""
-This project builds and compares two XGBoost models to predict machine failure, with one trained on the original dataset and the other on an augmented dataset. It showcases how generating synthetic data for the minority (failure) class using the **Synthetic Data Vault (SDV)** library can effectively balance the dataset. The final comparison demonstrates that this data augmentation technique improves the model's predictive performance and robustness.
-""")
+    st.title("Synthetic Data Generation for Machine Failure")
+    st.markdown("""
+    This project builds and compares two XGBoost models to predict machine failure, with one trained on the original dataset and the other on an augmented dataset. It showcases how generating synthetic data for the minority (failure) class using the **Synthetic Data Vault (SDV)** library can effectively balance the dataset. The final comparison demonstrates that this data augmentation technique improves the model's predictive performance and robustness.
+    """)
 
 
 
