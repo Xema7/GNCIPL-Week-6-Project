@@ -3,10 +3,6 @@ pandas
 numpy
 matplotlib
 seaborn
-scikit-learn
 sdv
+scikit-learn
 xgboost
-
-
-
-

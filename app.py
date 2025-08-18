@@ -35,13 +35,14 @@ This project builds and compares two XGBoost models to predict machine failure, 
 @st.cache_data
 def load_data(path):
     """Loads the dataset from a specified path."""
-    return pd.read_csv('data.csv')
+    return pd.read_csv('original_dataset.csv')
 
 # Cache data cleaning
 @st.cache_data
 def clean_data(_df):
     """Applies cleaning operations to the dataframe."""
     df_c = _df.copy()
+    df_c.drop('footfall', axis=1, inplace=True)
     df_c = df_c[(df_c['CS'] >= 4)]
     df_c = df_c[(df_c['Temperature'] >= 6)]
     return df_c
@@ -228,7 +229,7 @@ st.divider()
 st.header("5. Model Training & Comparison")
 
 # --- Preprocessing ---
-numerical_cols = ['footfall', 'tempMode', 'AQ', 'USS', 'CS', 'VOC', 'RP', 'IP', 'Temperature']
+numerical_cols = ['tempMode', 'AQ', 'USS', 'CS', 'VOC', 'RP', 'IP', 'Temperature']
 
 # Create augmented datasets
 X_train_augmented = pd.concat([X_train, synthetic_data.drop('fail', axis=1)], ignore_index=True)
