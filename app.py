@@ -21,6 +21,11 @@ from sklearn.metrics import classification_report, roc_auc_score, roc_curve, con
 # Import XGBoost model
 from xgboost import XGBClassifier
 
+# Set the page to use the full screen width
+st.set_page_config(layout="wide")
+
+left_margin, main_content = st.columns([1, 4])
+
 # Set page configuration for a wider layout
 #st.set_page_config(layout="wide")
 
@@ -28,6 +33,7 @@ st.title("Synthetic Data Generation for Machine Failure")
 st.markdown("""
 This project builds and compares two XGBoost models to predict machine failure, with one trained on the original dataset and the other on an augmented dataset. It showcases how generating synthetic data for the minority (failure) class using the **Synthetic Data Vault (SDV)** library can effectively balance the dataset. The final comparison demonstrates that this data augmentation technique improves the model's predictive performance and robustness.
 """)
+
 
 
 # --- Caching Functions to Improve Performance ---
