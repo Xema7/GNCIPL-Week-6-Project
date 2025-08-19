@@ -106,7 +106,7 @@ def train_xgb_model(X_train, y_train):
 
 # 1. Load and Explore Original Data
 st.header("1. Original Data Exploration")
-df_raw = load_data('data.csv')
+df_raw = load_data('data/original_dataset.csv')
 
 col1, col2 = st.columns([1, 2])
 
