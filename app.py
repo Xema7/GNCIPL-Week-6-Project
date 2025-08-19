@@ -47,7 +47,7 @@ This project builds and compares two XGBoost models to predict machine failure, 
 @st.cache_data
 def load_data(path):
     """Loads the dataset from a specified path."""
-    return pd.read_csv('original_dataset.csv')
+    return pd.read_csv('data/original_dataset.csv')
 
 # Download button for original dataset
 with original_data_container:
