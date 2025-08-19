@@ -192,7 +192,7 @@ df_cleaned = clean_data(df_raw)
 
 # Download button for cleaned dataset
 with cleaned_data_container:
-    with open("df_cleaned.csv", "rb") as cleaned:
+    with open("data/df_cleaned.csv", "rb") as cleaned:
         st.download_button(
             label="Cleaned Data",
             data=cleaned,
