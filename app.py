@@ -51,7 +51,7 @@ def load_data(path):
 
 # Download button for original dataset
 with original_data_container:
-    with open("original_dataset.csv", "rb") as file:
+    with open("data/original_dataset.csv", "rb") as file:
         st.download_button(
             label="Original Data",
             data=file,
