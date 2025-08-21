@@ -1,0 +1,73 @@
+Synthetic Data Generation for Machine Failure Prediction
+This repository contains the code and resources for a project focused on using synthetic data to improve the performance of a machine failure prediction model. The project addresses the common challenge of class imbalance in predictive maintenance datasets by augmenting the rare "failure" class with synthetically generated data.
+
+🚀 Project Overview
+The primary goal of this project is to demonstrate the effectiveness of synthetic data generation in enhancing the accuracy of machine failure prediction. The workflow involves:
+
+Analyzing and preprocessing a real-world machine sensor dataset.
+
+Generating synthetic data for the minority (failure) class using the Synthetic Data Vault (SDV) library.
+
+Training and comparing two XGBoost classifiers: one on the original, imbalanced data and another on the augmented, balanced data.
+
+Visualizing the results in an interactive Streamlit dashboard.
+
+The results show a significant improvement in the model's ability to predict failures, with the recall for the failure class increasing from 68% to 89%.
+
+✨ Key Features
+Data Cleaning and EDA: Comprehensive exploratory data analysis and preprocessing of the machine failure dataset.
+
+Synthetic Data Generation: Implementation of the GaussianCopulaSynthesizer from SDV to create a balanced training set.
+
+Comparative Model Training: Training and evaluation of two XGBoost models to provide a clear comparison of the impact of data augmentation.
+
+Interactive Dashboard: A user-friendly Streamlit application to visualize the project's findings.
+
+🛠️ Technologies Used
+Python: The core programming language for the project.
+
+Data Science Libraries: Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
+
+Machine Learning: XGBoost for the classification model.
+
+Synthetic Data: Synthetic Data Vault (SDV) for data augmentation.
+
+Web Framework: Streamlit for the interactive dashboard.
+
+🚀 Getting Started
+Prerequisites
+Python 3.9+
+
+pip
+
+Installation
+Clone the repository:
+
+git clone https://github.com/Xema7/GNCIPL-Week-6-Project.git
+
+Navigate to the project directory:
+
+cd GNCIPL-Week-6-Project
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+
+Running the Project
+To run the Streamlit dashboard:
+
+streamlit run app.py
+
+To explore the data analysis and model training process, you can run the Jupyter Notebook:
+
+jupyter notebook "Machine failure synthetic data generation.ipynb"
+
+📊 Results
+The use of synthetic data resulted in a significant improvement in the model's performance, particularly in its ability to correctly identify machine failures.
+
+Metric      Original Data Model    Augmented Data Model
+
+Accuracy          83%                    91%
+Failure Recall    68%                    89%
+
+This demonstrates that synthetic data generation is a powerful technique for addressing class imbalance in predictive maintenance.
