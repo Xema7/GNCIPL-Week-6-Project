@@ -71,3 +71,5 @@ Accuracy          83%                    91%
 Failure Recall    68%                    89%
 
 This demonstrates that synthetic data generation is a powerful technique for addressing class imbalance in predictive maintenance.
+
+Deployed App on Streamlit: https://machine-failure-synthetic-data-generation.streamlit.app/
